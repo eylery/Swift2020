@@ -20,13 +20,22 @@ class forthViewController: UIViewController {
         
     }
     
-    @objc func loadPic(url urlStr: String) -> UIImage {
+    @objc func loadPic(url urlStr: String?) -> UIImage {
 //        AF.request("").response {
 //
 //        }
-//        var murl = URL.init(string: urlStr)
-        var mdata = Data.init(contentsOf: URL.init(string: urlStr)!)
-        let image: UIImage = UIImage.init(data: mdata)
+        var image: UIImage = UIImage.init()
+        if let url = URL.init(string: urlStr!) {
+            do {
+                let mdata = try Data.init(contentsOf: url)
+                image = UIImage.init(data: mdata)!
+            } catch {
+                print("出现异常")
+            }
+        } else {
+            print("url nil")
+        }
+        
         return image
     }
     
