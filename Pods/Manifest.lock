@@ -1,20 +1,33 @@
 PODS:
   - Alamofire (5.2.2)
   - SnapKit (5.0.1)
+  - WYSwiftKit (0.1.0):
+    - SnapKit
 
 DEPENDENCIES:
   - Alamofire
   - SnapKit
+  - WYSwiftKit (from `https://github.com/everyheart9/WYSwiftKit.git`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SnapKit
 
+EXTERNAL SOURCES:
+  WYSwiftKit:
+    :git: https://github.com/everyheart9/WYSwiftKit.git
+
+CHECKOUT OPTIONS:
+  WYSwiftKit:
+    :commit: a90e507e473316c4331415c3994a5ff70c5a0c20
+    :git: https://github.com/everyheart9/WYSwiftKit.git
+
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  WYSwiftKit: 979021e90a2daba97056d73245de2536612df4a9
 
-PODFILE CHECKSUM: 7e459d8e8baec75df72879685b34a503dfb09c60
+PODFILE CHECKSUM: c7b2d9e912d814f038fd08633191c4dec87881e9
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+#source 'https://github.com/everyheart9/WYSwiftKit.git'
+
 target 'SwiftNew' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -8,5 +10,7 @@ target 'SwiftNew' do
   # Pods for SwiftNew
   pod 'SnapKit'
   pod 'Alamofire'
+  
+  pod 'WYSwiftKit' , :git => 'https://github.com/everyheart9/WYSwiftKit.git'
 
 end
